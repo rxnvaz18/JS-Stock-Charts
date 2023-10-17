@@ -23,7 +23,7 @@ async function main() {
     const averagePriceChartCanvas = document.querySelector('#average-price-chart');
 
     const response = await fetch('https://api.twelvedata.com/time_series?symbol=GME,MSFT,DIS,BNTX&interval=1day&apikey=1b9d97c7e6ab4207b0a65f3915b944c3')
-
+// added my sepcific api key at the end of the link
     const result = await response.json()
 // declares stock variable names that will return the values store in mockData.js
     const { GME, MSFT, DIS, BNTX } = result
